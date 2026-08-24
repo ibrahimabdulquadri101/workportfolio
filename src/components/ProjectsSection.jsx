@@ -32,7 +32,7 @@ const projects = [
       "Adaptive chunk sizing and sliding window protocol for congested network topologies",
       "Cryptographic SHA-256 block verification ensuring zero data corruption during transit",
     ],
-    tech: ["TypeScript", "WebRTC", "Node.js", "Socket.io", "Streams API"],
+    tech: ["JavaScript", "WebRTC", "Node.js", "Socket.io", "Streams API"],
     githubUrl: "https://github.com/ibrahimabdulquadri101/p2ptransfer",
     liveUrl: "https://p2ptransfer.onrender.com",
   },

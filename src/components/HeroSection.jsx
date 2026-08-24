@@ -6,7 +6,7 @@ import { Terminal } from "lucide-react";
 const HeroSection = ({ onOpenContact }) => {
   const navItems = [
     { label: "About", href: "#about" },
-    { label: "Services", href: "#services" },
+    { label: "What I Build", href: "#services" },
     { label: "Experience", href: "#experience" },
     { label: "Projects", href: "#projects" },
     { label: "Contact", onClick: onOpenContact },
@@ -55,7 +55,7 @@ const HeroSection = ({ onOpenContact }) => {
         <FadeIn delay={0.1} y={20}>
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/[0.05] border border-white/20 text-xs font-mono text-white/80 uppercase tracking-widest mb-4 sm:mb-6">
             <Terminal className="w-3.5 h-3.5 text-white" />
-            <span>[ Software Engineer · Systems & Full-Stack ]</span>
+            <span>[ Software Engineer · Full-Stack & Systems ]</span>
           </div>
         </FadeIn>
 
@@ -72,7 +72,8 @@ const HeroSection = ({ onOpenContact }) => {
 
         <FadeIn delay={0.35} y={20}>
           <p className="text-sm sm:text-base md:text-lg text-white/70 font-light max-w-2xl mx-auto mt-6 sm:mt-8 leading-relaxed">
-            Building high-throughput low-level systems in C++, resilient distributed backends with NestJS & PostgreSQL, and high-performance WebRTC platforms.
+            I write software across the full spectrum: C++ systems, distributed backends, full-stack web apps, and AI integrations.
+            I care about things that actually work at scale, and I enjoy figuring out the hard parts.
           </p>
         </FadeIn>
       </div>
@@ -83,7 +84,7 @@ const HeroSection = ({ onOpenContact }) => {
           <div className="flex items-center gap-3">
             <div className="w-2 h-2 rounded-full bg-white animate-pulse" />
             <p className="text-white/60 font-mono uppercase tracking-wider text-xs sm:text-sm text-center sm:text-left">
-              SCALABLE SYSTEMS · ARCHITECTURE · CODE
+              JAVASCRIPT · C++ · NODE.JS · REACT · NESTJS
             </p>
           </div>
         </FadeIn>

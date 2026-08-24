@@ -2,27 +2,37 @@ import React from "react";
 import FadeIn from "./FadeIn";
 import AnimatedText from "./AnimatedText";
 import { ContactButton } from "./Buttons";
-import { GraduationCap, Users, Cpu } from "lucide-react";
+import { GraduationCap, Users, Cpu, Globe, Server } from "lucide-react";
 
 const AboutSection = ({ onOpenContact }) => {
   const bioText =
-    "With a strong foundation in software engineering and low-level systems, i focus on scalable backend architectures, full-stack platforms, distributed systems, and creative high-performance web experiences. I truly enjoy building software that solves hard engineering challenges and scales gracefully. Let's build something incredible together!";
+    "I'm a software engineer who genuinely enjoys the craft. Whether that's designing a clean REST API, writing a memory allocator from scratch, or figuring out why a WebSocket drops under load. I started with frontend, picked up backend along the way, then eventually ended up deep in systems territory. I like working across the whole stack, and I care more about whether the software actually solves the problem than which framework it uses.";
 
   const badges = [
     {
+      icon: <Globe className="w-4 h-4 text-white" />,
+      label: "Frontend",
+      sub: "React, Next.js, Tailwind, Vite",
+    },
+    {
+      icon: <Server className="w-4 h-4 text-white" />,
+      label: "Backend",
+      sub: "Node.js, Express, NestJS, PostgreSQL",
+    },
+    {
+      icon: <Cpu className="w-4 h-4 text-white" />,
+      label: "Systems",
+      sub: "C++, Sockets, Multithreading, CMake",
+    },
+    {
       icon: <GraduationCap className="w-4 h-4 text-white" />,
-      label: "FUTA Software Engineering",
-      sub: "B.Tech (4th Year)",
+      label: "FUTA",
+      sub: "B.Tech Software Eng. · 4th Year",
     },
     {
       icon: <Users className="w-4 h-4 text-white" />,
       label: "GDG on Campus",
       sub: "Co-Technical Lead · 50+ Mentees",
-    },
-    {
-      icon: <Cpu className="w-4 h-4 text-white" />,
-      label: "Systems & Cloud",
-      sub: "C++, NestJS, Next.js, PostgreSQL",
     },
   ];
 

@@ -4,33 +4,33 @@ import FadeIn from "./FadeIn";
 const services = [
   {
     number: "01",
-    name: "Systems & C++ Engineering",
+    name: "Systems & Low-Level Engineering",
     description:
-      "Architecting high-throughput low-level software, custom inverted index search engines, network load balancers, and memory-efficient algorithms built from first principles without 3rd-party dependencies.",
+      "Custom memory allocators, network protocols, inverted-index search engines, and multithreaded load balancers built from scratch in C++ with CMake. No third-party abstractions, just direct memory management, socket I/O, and algorithms that are correct by construction.",
   },
   {
     number: "02",
-    name: "Backend & Distributed Architecture",
+    name: "Backend & API Architecture",
     description:
-      "Building resilient RESTful APIs and microservices with NestJS, TypeScript, PostgreSQL, TypeORM, Docker containerization, custom JWT authentication guards, and comprehensive OpenAPI/Swagger documentation.",
+      "RESTful APIs and server-side systems built with Node.js, Express, and NestJS, backed by PostgreSQL with TypeORM. JWT authentication, role-based access control, Docker containerisation, and OpenAPI documentation are standard parts of the workflow, not afterthoughts.",
   },
   {
     number: "03",
-    name: "Full-Stack Web Platforms",
+    name: "Full-Stack Web Development",
     description:
-      "Engineering full-scale web platforms with Next.js (App Router), React 19, TypeScript, and Tailwind CSS. Implementing robust SSR/SSG caching, RBAC, and secure HTTP-only cookie authentication flows.",
+      "Complete products built across the entire stack: React and Next.js on the frontend with SSR, dynamic routing, and Tailwind CSS; Node.js and PostgreSQL on the backend. I handle state management, API design, auth, and deployment end-to-end.",
   },
   {
     number: "04",
-    name: "AI Integrations & Intelligent Agents",
+    name: "AI & Intelligent Integrations",
     description:
-      "Developing automated OpenAI API pipelines, resume/CV scoring engines with animated analytics, autonomous TypeScript agents, and scheduled resilient data crawlers that normalize external data.",
+      "Integrating LLMs and generative APIs like OpenAI and Gemini into production applications with proper context management, token-aware chunking, streaming responses, and structured output parsing. The goal is useful AI behaviour, not demos.",
   },
   {
     number: "05",
-    name: "Creative Engineering & 3D Web",
+    name: "Creative & Interactive Web",
     description:
-      "Crafting fluid interactive web interfaces with Framer Motion, 3D graphics rendering pipelines, magnetic physics, and custom shaders optimized for smooth 60fps performance across all devices.",
+      "Animated interfaces built with Framer Motion, real-time collaborative features over WebSockets, WebRTC peer-to-peer video and data channels, and physics-driven UI interactions. Optimised for consistent 60fps and responsive across all viewports.",
   },
 ];
 
@@ -44,13 +44,13 @@ const ServicesSection = () => {
         {/* Heading */}
         <FadeIn delay={0} y={40} className="w-full text-center mb-16 sm:mb-20 md:mb-24">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-black/[0.05] border border-black/10 text-xs font-mono text-black/60 uppercase tracking-widest mb-3">
-            <span>[ core_capabilities ]</span>
+            <span>[ what_i_build ]</span>
           </div>
           <h2
             className="text-[#000000] font-black uppercase leading-none tracking-tight"
-            style={{ fontSize: "clamp(3rem, 12vw, 160px)" }}
+            style={{ fontSize: "clamp(2.2rem, 9vw, 140px)" }}
           >
-            Services
+            What I Build
           </h2>
         </FadeIn>
 
