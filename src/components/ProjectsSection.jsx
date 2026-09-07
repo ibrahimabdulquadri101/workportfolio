@@ -19,42 +19,26 @@ import {
 } from "lucide-react";
 
 const projects = [
+  // ── C++ Systems ──────────────────────────────────────────────
   {
     number: "01",
-    name: "p2ptransfer",
-    category: "Distributed Systems & Networking",
-    icon: <Server className="w-5 h-5 text-white" />,
-    tagline: "Peer-to-Peer High-Throughput Data Streaming Protocol",
+    name: "Motion Tracker",
+    category: "Computer Vision & Systems Engineering",
+    icon: <Layers className="w-5 h-5 text-white" />,
+    tagline: "Real-Time Motion Detection & Sentry System in C++17",
     description:
-      "A direct peer-to-peer data and file transfer system engineered for low-latency transmission across decentralized nodes without routing through centralized relays. Implements binary chunking, stream multiplexing, and cryptographic checksum validation.",
+      "A real-time motion detection and sentry system built from scratch in C++17 using OpenCV. No ML frameworks, no shortcuts. Every frame passes through a 5-stage vision pipeline: background subtraction, blob detection, Kalman-filter tracking with persistent IDs, and timestamped alert logging.",
     highlights: [
-      "Direct WebRTC & raw socket mesh communication for zero-relay data transfer",
-      "Adaptive chunk sizing and sliding window protocol for congested network topologies",
-      "Cryptographic SHA-256 block verification ensuring zero data corruption during transit",
+      "5-stage pipeline: FrameCapture, BackgroundModel, BlobDetector, KalmanTracker, Alerter",
+      "Kalman filter assigns persistent object IDs and predicts position between frames",
+      "Timestamped detection log with confidence scores, frame index, and pixel coordinates",
     ],
-    tech: ["JavaScript", "WebRTC", "Node.js", "Socket.io", "Streams API"],
-    githubUrl: "https://github.com/ibrahimabdulquadri101/p2ptransfer",
-    liveUrl: "https://p2ptransfer.onrender.com",
+    tech: ["C++17", "OpenCV", "CMake", "Kalman Filter", "Computer Vision"],
+    githubUrl: "https://github.com/ibrahimabdulquadri101/Motion-Tracker",
+    liveUrl: null,
   },
   {
     number: "02",
-    name: "Roomer Chat",
-    category: "WebRTC & Real-Time Video Streaming",
-    icon: <Video className="w-5 h-5 text-white" />,
-    tagline: "Real-Time Anonymous Peer-to-Peer Video Chat Application",
-    description:
-      "A real-time anonymous video chat application that connects random users worldwide for instant peer-to-peer video conversations. Built with React 18, Vite, Socket.IO signaling, and PeerJS WebRTC streaming with Google STUN NAT traversal.",
-    highlights: [
-      "Anonymous Video Matching: Instant global matchmaking with Socket.IO signaling",
-      "Peer-to-Peer Video Streaming: Direct audio/video transmission using WebRTC & PeerJS",
-      "STUN Server Support: Google STUN servers with auto-reconnection polling fallback",
-    ],
-    tech: ["React 18", "WebRTC", "PeerJS", "Socket.IO", "Tailwind CSS", "Vite", "Render"],
-    githubUrl: "https://github.com/ibrahimabdulquadri101/lrommer1",
-    liveUrl: "https://lrommer.onrender.com",
-  },
-  {
-    number: "03",
     name: "mini-search-engine",
     category: "Information Retrieval & Algorithms",
     icon: <Search className="w-5 h-5 text-white" />,
@@ -71,7 +55,7 @@ const projects = [
     liveUrl: null,
   },
   {
-    number: "04",
+    number: "03",
     name: "3d-renderer",
     category: "Graphics & Computational Geometry",
     icon: <Box className="w-5 h-5 text-white" />,
@@ -88,7 +72,7 @@ const projects = [
     liveUrl: null,
   },
   {
-    number: "05",
+    number: "04",
     name: "load-balancer",
     category: "Networking & Distributed Infrastructure",
     icon: <Layers className="w-5 h-5 text-white" />,
@@ -103,6 +87,24 @@ const projects = [
     tech: ["C++", "Socket Programming", "Multithreading", "Concurrency", "Networking"],
     githubUrl: "https://github.com/ibrahimabdulquadri101/load-balancer",
     liveUrl: null,
+  },
+  // ── JavaScript / Node.js ─────────────────────────────────────
+  {
+    number: "05",
+    name: "p2ptransfer",
+    category: "Distributed Systems & Networking",
+    icon: <Server className="w-5 h-5 text-white" />,
+    tagline: "Peer-to-Peer High-Throughput Data Streaming Protocol",
+    description:
+      "A direct peer-to-peer data and file transfer system engineered for low-latency transmission across decentralized nodes without routing through centralized relays. Implements binary chunking, stream multiplexing, and cryptographic checksum validation.",
+    highlights: [
+      "Direct WebRTC & raw socket mesh communication for zero-relay data transfer",
+      "Adaptive chunk sizing and sliding window protocol for congested network topologies",
+      "Cryptographic SHA-256 block verification ensuring zero data corruption during transit",
+    ],
+    tech: ["JavaScript", "WebRTC", "Node.js", "Socket.io", "Streams API"],
+    githubUrl: "https://github.com/ibrahimabdulquadri101/p2ptransfer",
+    liveUrl: "https://p2ptransfer.onrender.com",
   },
   {
     number: "06",
@@ -138,8 +140,26 @@ const projects = [
     githubUrl: "https://github.com/ibrahimabdulquadri101/document-summariser",
     liveUrl: null,
   },
+  // ── React / Web Apps ─────────────────────────────────────────
   {
     number: "08",
+    name: "Roomer Chat",
+    category: "WebRTC & Real-Time Video Streaming",
+    icon: <Video className="w-5 h-5 text-white" />,
+    tagline: "Real-Time Anonymous Peer-to-Peer Video Chat Application",
+    description:
+      "A real-time anonymous video chat application that connects random users worldwide for instant peer-to-peer video conversations. Built with React 18, Vite, Socket.IO signaling, and PeerJS WebRTC streaming with Google STUN NAT traversal.",
+    highlights: [
+      "Anonymous Video Matching: Instant global matchmaking with Socket.IO signaling",
+      "Peer-to-Peer Video Streaming: Direct audio/video transmission using WebRTC & PeerJS",
+      "STUN Server Support: Google STUN servers with auto-reconnection polling fallback",
+    ],
+    tech: ["React 18", "WebRTC", "PeerJS", "Socket.IO", "Tailwind CSS", "Vite"],
+    githubUrl: "https://github.com/ibrahimabdulquadri101/lrommer1",
+    liveUrl: "https://lrommer.onrender.com",
+  },
+  {
+    number: "09",
     name: "chatee",
     category: "AI Chatbot & Generative Interface",
     icon: <MessageSquare className="w-5 h-5 text-white" />,
